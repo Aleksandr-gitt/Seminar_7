@@ -7,7 +7,7 @@
 // 17 -> такого числа в массиве нет
 
 
-void FillAndFind(int num, int row, int col)
+int[,] FillArray()
 {
     int[,] SomeNumbers = new int[10,10];
 
@@ -20,15 +20,24 @@ void FillAndFind(int num, int row, int col)
         }
         Console.WriteLine();
     }
-    if(SomeNumbers[row, col] == num) Console.WriteLine("В заданом пересечении строки и столбца есть искомое число");
-    else Console.WriteLine("В заданом пересечении строки и столбца нет искомого числа");
+    return SomeNumbers;
+}
+void FindNumber(int num)
+{
+    int [,] massive = FillArray();
+    int findNum = 0;
+    for(int i = 0; i < 10; i++)
+    {
+        for(int j = 0; j < 10; j++)
+        {
+            if(massive[i, j] == num) findNum = 1; 
+        }
+    }
+    if(findNum == 1) Console.Write($"{num} - такое число в массиве есть");
+    else Console.Write($"{num} - такое число в массиве отсутствует");
 }
 
 Console.WriteLine("Введите искомое число от 1 до 100:");
 int MyNumber = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите строку для поиска(с 1 по 10):");
-int row = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите столбец для поиска(с 1 по 10):");
-int column = Convert.ToInt32(Console.ReadLine());
 
-FillAndFind(MyNumber, row, column);
+FindNumber(MyNumber);
