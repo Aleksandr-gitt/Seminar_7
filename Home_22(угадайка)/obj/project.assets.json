@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iquser\\Desktop\\GIT\\Seminar_7\\Hoome_2_2\\Hoome_2_2.csproj",
-      "projectName": "Hoome_2_2",
-      "projectPath": "C:\\Users\\iquser\\Desktop\\GIT\\Seminar_7\\Hoome_2_2\\Hoome_2_2.csproj",
+      "projectUniqueName": "C:\\Users\\iquser\\Desktop\\GIT\\Seminar_7\\Home_2\\Home_2.csproj",
+      "projectName": "Home_2",
+      "projectPath": "C:\\Users\\iquser\\Desktop\\GIT\\Seminar_7\\Home_2\\Home_2.csproj",
       "packagesPath": "C:\\Users\\iquser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iquser\\Desktop\\GIT\\Seminar_7\\Hoome_2_2\\obj\\",
+      "outputPath": "C:\\Users\\iquser\\Desktop\\GIT\\Seminar_7\\Home_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\iquser\\AppData\\Roaming\\NuGet\\NuGet.Config"
