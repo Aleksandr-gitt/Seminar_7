@@ -15,16 +15,17 @@ void FillAndFind(int num, int row, int col)
     {
         for(int j = 0; j < 10; j++)
         {
-            SomeNumbers[i, j] = new Random().Next(1, 101);
-            Console.Write($"{SomeNumbers[i, j]} ");
+            SomeNumbers[i, j] = new Random().Next(0, 2);
+            Console.Write($"{SomeNumbers[i, j]}|");
         }
         Console.WriteLine();
     }
+    Console.WriteLine();
     if(SomeNumbers[row, col] == num) Console.WriteLine("В заданом пересечении строки и столбца есть искомое число");
     else Console.WriteLine("В заданом пересечении строки и столбца нет искомого числа");
 }
 
-Console.WriteLine("Введите искомое число от 1 до 100:");
+Console.WriteLine("Угадай число от 0 до 1:");
 int MyNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите строку для поиска(с 1 по 10):");
 int row = Convert.ToInt32(Console.ReadLine());

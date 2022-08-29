@@ -4,21 +4,22 @@
 // 5 9 2 3
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
-
+Console.Clear();
 
 int[,] FillArray()
 {
-    int[,] SomeNumbers = new int[5, 5];
+    int[,] SomeNumbers = new int[4, 4];
 
-    for(int i = 0; i < 5; i++)
+    for(int i = 0; i < 4; i++)
     {
-        for(int j = 0; j < 5; j++)
+        for(int j = 0; j < 4; j++)
         {
             SomeNumbers[i, j] = new Random().Next(1, 11);
             Console.Write($"{SomeNumbers[i, j]} ");
         }
         Console.WriteLine();
     }
+    Console.WriteLine();
     return SomeNumbers;
 }
 
@@ -37,6 +38,7 @@ void Average()
         double AveNum = (double)sum/mass.GetLength(0);
         Console.Write($"{AveNum} ");
     }
+    
 }
 
 Average();

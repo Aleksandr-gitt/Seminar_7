@@ -20,6 +20,7 @@ int[,] FillArray()
         }
         Console.WriteLine();
     }
+    Console.WriteLine();
     return SomeNumbers;
 }
 void FindNumber(int num)
@@ -33,8 +34,8 @@ void FindNumber(int num)
             if(massive[i, j] == num) findNum = 1; 
         }
     }
-    if(findNum == 1) Console.Write($"{num} - такое число в массиве есть");
-    else Console.Write($"{num} - такое число в массиве отсутствует");
+    if(findNum == 1) Console.Write($"Ваше число ({num}) - в массиве есть");
+    else Console.Write($"Ваше число ({num}) - в массиве отсутствует");
 }
 
 Console.WriteLine("Введите искомое число от 1 до 100:");
